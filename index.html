@@ -1,10 +1,55 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Paytone+One&family=Squada+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <header class="border-b-black border-b lg:border-b-2 fixed left-0 right-0 top-0 bg-bgColor-light z-[999]">
+    <nav class=" after:bg-black after:opacity-60 after:absolute after:content-[''] after:right-0 after:top-[51px] after:bottom-0 after:h-screen after:z-10 lg:after:hidden">
+      <div class="container flex justify-between relative">
+        <a class="block bg-[url('../images/logo.svg')] bg-contain bg-no-repeat w-[85px] h-[18px] lg:w-[190px] lg:h-10 my-4 lg:my-8" href="index.html"></a>
+        <div class="menu flex">
+          <form class="search_box flex items-center lg:px-12 lg:py-10 lg:border-x-[1px] lg:border-black absolute right-14 top-[13px] lg:static transition-all duration-500">
+            <i class="search_close fa-solid fa-angle-left h-6 mr-4 text-lg lg:text-2xl hidden transition-all duration-500"></i>
+            <input class="hidden lg:block bg-bgColor-light text-base border-0 bg-transparent mr-6 p-0 w-full xl:w-48 2xl:w-72 h-6 focue:outline-none focus:ring-0 transition-all duration-500" type="text" placeholder="搜尋作品名稱、藝術家名稱">
+            <a href="javascript:void(0)">
+              <i class="search_icon fa-solid fa-magnifying-glass flex items-center text-lg lg:text-2xl h-6"></i>
+            </a>
+          </form>
+          <ul class="fixed px-3 pb-9 lg:px-0 lg:pb-0 left-full lg:left-0 top-[51px] lg:top-0 lg:relative flex flex-col lg:flex-row w-full z-20 bg-white lg:bg-bgColor-light lg:w-auto transition-all duration-300">
+            <li class="flex justify-center items-center p-6 lg:p-0 border-b border-black lg:border-b-0 lg:border-r-[1px] lg:border-black">
+              <a class="block text-lg lg:px-12 lg:py-10 transition-all duration-300 hover:bg-white" href="#">探索</a>
+            </li>
+            <li class="flex justify-center items-center p-6 lg:p-0 lg:border-r-[1px] lg:border-black">
+              <a class="block text-lg lg:px-12 lg:py-10 transition-all duration-300 hover:bg-white" href="#">市值</a>
+            </li>
+            <li class="flex justify-center lg:pl-12 lg:py-10">
+              <a class="flex border border-black lg:border-0 w-full text-center items-center lg:h-6" href="#"><i class="fa-solid fa-wallet text-2xl hidden lg:block"></i>
+              <span class="block w-full py-3 bg-primary text-bgColor-light lg:hidden">連結錢包</span>
+              </a>
+            </li>
+          </ul>
+          <div class="hamburger flex items-center lg:hidden">
+            <i class="fa-solid fa-bars text-2xl"></i>
+            <i class="hidden fa-solid fa-xmark text-2xl"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mt-[52px] md:mt-[90px] lg:mt-[108px]">
+    
 <section class="lg:py-10">
 	<div class="container px-0 md:px-3">
 		<div class="flex">
@@ -381,3 +426,18 @@ current: index
       </ul>
 		</div>
 </section>
+  </main>
+
+  <footer class="border-t border-black">
+    <div class="border-t-4 border-black mt-2">
+      <div class="flex justify-center py-6 font-sans">©<h1 class="ml-1">ART NFT</h1>. All Rights Reserved</div>
+    </div>
+  </footer>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
