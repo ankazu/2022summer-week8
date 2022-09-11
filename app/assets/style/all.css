@@ -1,0 +1,116 @@
+@tailwind base;
+@layer base {
+	body {
+		font-family: 'Squada One', 'Noto Sans TC', sans-serif;
+		line-height: 1.5;
+		background-color: #F0F0F0;
+	}
+}
+@tailwind components;
+
+.btn {
+	@apply inline-block leading-none relative text-lg
+}
+.btn-primary {
+	@apply border border-black transition-all duration-500 text-lg py-2 px-12 leading-none
+}
+.btn:hover {
+	@apply bg-primary text-white
+}
+.btn::after {
+	@apply content-[''] absolute right-0 bottom-0 border-transparent border-b-primary border-r-primary border-8 transition-all duration-500
+}
+.btn:hover::after {
+	@apply border-b-black border-r-black
+}
+
+.btn-img-cover {
+	@apply before:absolute before:left-0 before:top-0 before:bottom-0 before:right-0 before:transition-all before:duration-500 before:bg-black before:opacity-0 before:content-[''] before:z-10 group-hover:before:opacity-70
+}
+
+.btn-secondary { 
+	@apply text-lg py-2 px-12 leading-none
+}
+.btn-secondary:hover {
+	@apply border border-black
+}
+
+
+@tailwind utilities;
+.search_open {
+	@apply bg-bgColor-light right-3 left-3 h-6
+}
+.search_open input, .search_open i:first-child {
+	@apply flex items-center
+}
+.menu_open::after {
+	@apply left-0
+}
+.menu_open ul {
+	@apply left-0 
+}
+.menu_open .hamburger i:first-child {
+	@apply hidden
+}
+.menu_open .hamburger i:last-child {
+	@apply block
+}
+
+
+.index-artist .swiper-slide-active a {
+	@apply opacity-100 bottom-6 right-6
+}
+.index-artist .swiper-slide-active h3 {
+	@apply opacity-100 top-6 left-6
+}
+.index-artist .swiper-slide-active p {
+	@apply opacity-100
+}
+
+.index-artist ~ .swiper-pagination {
+	bottom: -24px;
+}
+.swiper-pagination .swiper-pagination-bullet {
+	border-radius: 0;
+	background: #000;
+	opacity: 1;
+	transition: all .4s;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: #e6553b;
+	width: 16px;
+}
+.index-artist .swiper-slide {
+	height: 232px;
+}
+@media screen and (min-width: 576px) {
+	.index-artist .swiper-slide {
+		@apply transition-all duration-300 flex items-center
+	}
+	.index-artist .swiper-slide {
+		height: 80%;
+	}
+	.index-artist~.swiper-pagination {
+		bottom: -48px;
+	}
+}
+@media screen and (min-width: 758px) { 
+	.index-artist .swiper-slide {
+		height: 100%;
+	}
+}
+@media screen and (min-width: 1140px) {
+	.index-artist .swiper-slide-prev,
+		.index-artist .swiper-slide-next {
+			width: 25.5% !important;
+			@apply grayscale mr-6
+		}
+		.index-artist .swiper-slide {
+			height: 262px;
+			@apply grayscale
+		}
+		.index-artist .swiper-slide-active {
+			width: 49% !important;
+			@apply grayscale-0 mr-6 h-full
+		}
+}
