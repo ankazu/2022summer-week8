@@ -56,6 +56,16 @@
 	@apply block
 }
 
+/* tabs */
+.operations_tab-active {
+	@apply after:absolute after:content-[''] after:left-0 after:-bottom-0.5 after:w-full after:h-1 after:bg-bgColor-light border border-black border-b-0 text-black
+}
+.operations_content { 
+	@apply hidden
+}
+.operations_content-active {
+	@apply block
+}
 
 .index-artist .swiper-slide-active a {
 	@apply opacity-100 bottom-6 right-6
@@ -66,7 +76,6 @@
 .index-artist .swiper-slide-active p {
 	@apply opacity-100
 }
-
 .index-artist ~ .swiper-pagination {
 	bottom: -24px;
 }

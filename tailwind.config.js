@@ -17,6 +17,7 @@ module.exports = {
       },
       colors:{
         primary: '#E6553B',
+        fade: '#808080', 
         bgColor: {
           light: '#f0f0f0',
         }
@@ -35,6 +36,7 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('@tailwindcss/line-clamp'),
     require('@tailwindcss/typography'),
   ],
 }

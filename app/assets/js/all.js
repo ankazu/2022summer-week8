@@ -3,6 +3,9 @@ const searchIcon = document.querySelector('.search_icon');
 const searchClose = document.querySelector('.search_close');
 const hamburger = document.querySelector('.hamburger');
 const navTag = document.getElementsByTagName('nav')[0];
+const tabs = document.querySelectorAll('.operations_tab');
+const tabsContainer = document.querySelector('.operations_tab-container');
+const tabsContent = document.querySelectorAll('.operations_content');
 
 
   searchIcon.addEventListener('click', function() {
@@ -49,6 +52,23 @@ let artistSwiper = new Swiper(".index-artist", {
   }
 });
 
+tabsContainer.addEventListener('click', function (e) {
+  e.preventDefault();
+  const clicked = e.target.closest('.operations_tab');
+
+  if (!clicked) return;
+
+  tabs.forEach(t => t.classList.remove('operations_tab-active'));
+  tabsContent.forEach(c => c.classList.remove('operations_content-active'));
+
+  clicked.classList.add('operations_tab-active');
+
+  document
+    .querySelector(`.operations_content-${clicked.dataset.tab}`)
+    .classList.add('operations_content-active');
+});
+
+
 let indexMasonry = document.querySelector('#indexMasonry');
 if (indexMasonry) {
   let iMasonry = new Masonry(indexMasonry, {
@@ -59,3 +79,14 @@ if (indexMasonry) {
     iMasonry.layout();
   });
 };
+
+tabsContainer.addEventListener('click', function() {
+  let artistMasonry = document.querySelector('#artistMasonry');
+  if (artistMasonry) {
+    new Masonry(artistMasonry, {
+      itemSelector: 'li',
+      horizontalOrder: true
+    });
+  };
+})
+

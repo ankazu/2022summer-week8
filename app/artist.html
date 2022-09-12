@@ -1,0 +1,268 @@
+---
+title: NFT藝術家交易平台
+layout: ./app/layout.ejs
+engine: ejs
+current: artist
+---
+
+<section class="pt-6 lg:pt-10">
+	<div class="container">
+		<div class="flex flex-wrap lg:-mx-3">
+			<div class="flex flex-wrap w-full lg:w-3/4 lg:px-3">
+				<div class="lg:w-2/5">
+					<img class="w-full h-full object-cover" src="./assets/images/artist01.jpg" alt="michael">
+				</div>
+				<div class="border border-black bg-white p-6 lg:w-3/5">
+					<div class="flex justify-between mb-4">
+						<h2 class="text-5xl">michael</h2>
+						<ul class="flex items-center gap-x-2">
+            <li>
+              <a href="#" class="duration-300 hover:text-primary"><i class="fa-brands fa-discord"></i></a>
+            </li>
+            <li>
+              <a href="#" class="duration-300 hover:text-primary"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#" class="duration-300 hover:text-primary"><i class="fa-solid fa-globe"></i></a>
+            </li>
+            <li>
+              <a href="#" class="duration-300 hover:text-primary"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+					</div>
+					<span>0x3ya666…88ef</span>
+					<p class="mt-6 lg:line-clamp-4">
+						Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​
+					</p>
+				</div>
+			</div>
+			<div class="w-full lg:w-1/4 lg:px-3 mt-4 lg:mt-0">
+				<ul class="bg-white">
+					<li class="py-4 px-6 flex justify-between items-center border border-black">
+						<div class="font-bold">販售中</div>
+						<div class="text-3xl leading-none">168</div>
+					</li>
+					<li class="py-4 px-6 flex justify-between items-center border border-black border-t-0">
+						<div class="font-bold">地板價格</div>
+						<div class="text-3xl leading-none">0.6 ETH</div>
+					</li>
+					<li class="py-4 px-6 flex justify-between items-center border border-black border-t-0">
+						<div class="font-bold">7 日成交</div>
+						<div class="text-3xl leading-none">8.8 ETH</div>
+					</li>
+					<li class="py-4 px-6 flex justify-between items-center border border-black border-t-0">
+						<div class="font-bold">30 日成交</div>
+						<div class="text-3xl leading-none">23.1 ETH</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="py-10 lg:pt-20">
+	<div class="container">
+		<div class="operations_tab-container border-black border-b flex">
+			<a class="operations_tab operations_tab-active text-3xl lg:text-5xl flex items-end py-4 px-4 md:px-12 relative text-fade" href="#" data-tab="1">Art Works <span class="text-xl hidden sm:block ml-4">系列作品</span></a>
+			<a class="operations_tab text-3xl lg:text-5xl flex items-end py-4 px-4 md:px-12 relative text-fade" href="#" data-tab="2">Collection<span class="text-xl hidden sm:block ml-4">收藏品</span></a>
+
+		</div>
+		<div class="operations_content operations_content-1 operations_content-active mt-6 sm:mt-10">
+			<div class="mb-4 lg:mb-16 2xl:mb-[88px] bg-white border border-black relative before:absolute before:left-0 before:top-0 before:border-8 before:border-transparent before:border-t-black before:border-l-black after:absolute after:right-0 after:top-0 after:border-8 after:border-transparent after:border-t-black after:border-r-black">
+				<div class="pt-12 px-4 md:w-10/12 mx-auto pb-10 lg:pb-[21%] relative flex flex-wrap md:items-end">
+					<div class="lg:w-4/5">
+						<h3 class="text-2xl mb-4">追求者送我的花</h3>
+						<p>我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+					</div>
+					<div class="w-full lg:absolute lg:top-[40%] lg:left-0 mt-6">
+						<ul class="lg:-mx-1 lg:flex">
+							<li class="lg:w-1/4 lg:px-1">
+								<div class="border-[10px] border-black bg-[url(../images/art31.jpg)] bg-cover bg-center bg-no-repeat pb-[95%]"></div>
+							</li>
+							<li class="hidden lg:block lg:w-1/4 lg:px-1">
+								<div class="border-[10px] border-black bg-[url(../images/art30.jpg)] bg-cover bg-center bg-no-repeat pb-[95%]"></div>
+							</li>
+							<li class="hidden lg:block lg:w-1/4 lg:px-1">
+								<div class="border-[10px] border-black bg-[url(../images/art14.jpg)] bg-cover bg-center bg-no-repeat pb-[95%]"></div>
+							</li>
+							<li class="hidden lg:block lg:w-1/4 lg:px-1">
+								<div class="border-[10px] border-black bg-[url(../images/art29.jpg)] bg-cover bg-center bg-no-repeat pb-[95%]"></div>
+							</li>
+						</ul>
+					</div>
+					<div class="lg:w-1/5 mx-auto md:text-right mt-6 lg:mt-0">
+						<a class="btn btn-primary" href="#">MORE</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="mb-4 lg:mb-16 2xl:mb-[88px] bg-white border border-black relative before:absolute before:left-0 before:top-0 before:border-8 before:border-transparent before:border-t-black before:border-l-black after:absolute after:right-0 after:top-0 after:border-8 after:border-transparent after:border-t-black after:border-r-black">
+				<div class="pt-12 px-4 md:w-10/12 mx-auto pb-10 lg:pb-[21%] relative flex flex-wrap md:items-end">
+					<div class="lg:w-4/5">
+						<h3 class="text-2xl mb-4">我家窗前的鳥</h3>
+						<p>家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+					</div>
+					<div class="w-full lg:absolute lg:top-[40%] lg:left-0 mt-6">
+						<ul class="lg:-mx-1 lg:flex">
+							<li class="lg:w-1/4 lg:px-1">
+								<div class="border-[10px] border-black bg-[url(../images/art27.jpg)] bg-cover bg-center bg-no-repeat pb-[95%]"></div>
+							</li>
+							<li class="hidden lg:block lg:w-1/4 lg:px-1">
+								<div class="border-[10px] border-black bg-[url(../images/art20.jpg)] bg-cover bg-center bg-no-repeat pb-[95%]"></div>
+							</li>
+							<li class="hidden lg:block lg:w-1/4 lg:px-1">
+								<div class="border-[10px] border-black bg-[url(../images/art26.jpg)] bg-cover bg-center bg-no-repeat pb-[95%]"></div>
+							</li>
+							<li class="hidden lg:block lg:w-1/4 lg:px-1">
+								<div class="border-[10px] border-black bg-[url(../images/art22.jpg)] bg-cover bg-center bg-no-repeat pb-[95%]"></div>
+							</li>
+						</ul>
+					</div>
+					<div class="lg:w-1/5 mx-auto md:text-right mt-6 lg:mt-0">
+						<a class="btn btn-primary" href="#">MORE</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="operations_content operations_content-2 mt-6 sm:mt-10">
+			<ul class="-mx-3 grid" id="artistMasonry">
+				<li class="mb-4 md:mb-12 w-1/2 px-3 md:w-1/3 xl:w-1/4">
+					<div class="group relative">
+						<div class="relative bg-white p-2 md:p-4 lg:p-6">
+							<div class="h-[139px] md:h-[239px]">
+								<img class="w-full h-full object-cover" src="./assets/images/art09.jpg" alt="區塊戀-他的私生活" />
+							</div>
+							<div class="absolute inset-2 md:inset-4 lg:inset-6 before:absolute before:inset-0 before:bg-black before:opacity-70 group-hover:opacity-100 block opacity-0 transition-all duration-500">
+								<div class="absolute inset-2 lg:inset-4 text-white flex flex-col p-4 ring-1 ring-white">
+									<h3 class="hidden lg:block">唯一想擁有的人，唯一不可以擁有的</h3>
+									<span class="mt-2 leading-none hidden lg:inline-block"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+									<a href="./introduce.html" class="btn lg:px-12 lg:py-2 mt-auto flex justify-center items-center lg:self-end bg-transparent lg:bg-white lg:text-black w-full lg:w-auto h-full lg:h-auto hover:bg-transparent after:opacity-0 after:lg:opacity-100">more</a>
+								</div>
+							</div>
+						</div>
+						<h3 class="py-2 px-2 md:px-4 lg:px-0 text-sm font-bold leading-5 lg:border-b lg:border-b-black md:py-3 md:text-base md:leading-normal lg:py-4">區塊戀-他的私生活</h3>
+					</div>
+				</li>
+				<li class="mb-4 md:mb-12 w-1/2 px-3 md:w-1/3 xl:w-1/4">
+					<div class="group relative">
+						<div class="relative bg-white p-2 md:p-4 lg:p-6">
+							<div class="h-[167px] md:h-[327px]">
+								<img class="w-full h-full object-cover" src="./assets/images/art10.jpg" alt="夏娃的醜聞" />
+							</div>
+							<div class="absolute inset-2 md:inset-4 lg:inset-6 before:absolute before:inset-0 before:bg-black before:opacity-70 group-hover:opacity-100 block opacity-0 transition-all duration-500">
+								<div class="absolute inset-2 lg:inset-4 text-white flex flex-col p-4 ring-1 ring-white">
+									<h3 class="hidden lg:block">唯一想擁有的人，唯一不可以擁有的</h3>
+									<span class="mt-2 leading-none hidden lg:inline-block"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+									<a href="./introduce.html" class="btn lg:px-12 lg:py-2 mt-auto flex justify-center items-center lg:self-end bg-transparent lg:bg-white lg:text-black w-full lg:w-auto h-full lg:h-auto hover:bg-transparent after:opacity-0 after:lg:opacity-100">more</a>
+								</div>
+							</div>
+						</div>
+						<h3 class="py-2 px-2 md:px-4 lg:px-0 text-sm font-bold leading-5 lg:border-b lg:border-b-black md:py-3 md:text-base md:leading-normal lg:py-4">夏娃的醜聞</h3>
+					</div>
+				</li>
+				<li class="mb-4 md:mb-12 w-1/2 px-3 md:w-1/3 xl:w-1/4">
+					<div class="group relative">
+						<div class="relative bg-white p-2 md:p-4 lg:p-6">
+							<div class="h-[93px] md:h-[254px]">
+								<img class="w-full h-full object-cover" src="./assets/images/art02.jpg" alt="藍色啤酒海" />
+							</div>
+							<div class="absolute inset-2 md:inset-4 lg:inset-6 before:absolute before:inset-0 before:bg-black before:opacity-70 group-hover:opacity-100 block opacity-0 transition-all duration-500">
+								<div class="absolute inset-2 lg:inset-4 text-white flex flex-col p-4 ring-1 ring-white">
+									<h3 class="hidden lg:block">唯一想擁有的人，唯一不可以擁有的</h3>
+									<span class="mt-2 leading-none hidden lg:inline-block"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+									<a href="./introduce.html" class="btn lg:px-12 lg:py-2 mt-auto flex justify-center items-center lg:self-end bg-transparent lg:bg-white lg:text-black w-full lg:w-auto h-full lg:h-auto hover:bg-transparent after:opacity-0 after:lg:opacity-100">more</a>
+								</div>
+							</div>
+						</div>
+						<h3 class="py-2 px-2 md:px-4 lg:px-0 text-sm font-bold leading-5 lg:border-b lg:border-b-black md:py-3 md:text-base md:leading-normal lg:py-4">藍色啤酒海</h3>
+					</div>
+				</li>
+				<li class="mb-4 md:mb-12 w-1/2 px-3 md:w-1/3 xl:w-1/4">
+					<div class="group relative">
+						<div class="relative bg-white p-2 md:p-4 lg:p-6">
+							<div class="h-[173px] md:h-[169px]">
+								<img class="w-full h-full object-cover" src="./assets/images/art11.jpg" alt="沒有人愛我" />
+							</div>
+							<div class="absolute inset-2 md:inset-4 lg:inset-6 before:absolute before:inset-0 before:bg-black before:opacity-70 group-hover:opacity-100 block opacity-0 transition-all duration-500">
+								<div class="absolute inset-2 lg:inset-4 text-white flex flex-col p-4 ring-1 ring-white">
+									<h3 class="hidden lg:block">唯一想擁有的人，唯一不可以擁有的</h3>
+									<span class="mt-2 leading-none hidden lg:inline-block"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+									<a href="./introduce.html" class="btn lg:px-12 lg:py-2 mt-auto flex justify-center items-center lg:self-end bg-transparent lg:bg-white lg:text-black w-full lg:w-auto h-full lg:h-auto hover:bg-transparent after:opacity-0 after:lg:opacity-100">more</a>
+								</div>
+							</div>
+						</div>
+						<h3 class="py-2 px-2 md:px-4 lg:px-0 text-sm font-bold leading-5 lg:border-b lg:border-b-black md:py-3 md:text-base md:leading-normal lg:py-4">沒有人愛我</h3>
+					</div>
+				</li>
+				<li class="mb-4 md:mb-12 w-1/2 px-3 md:w-1/3 xl:w-1/4">
+					<div class="group relative">
+						<div class="relative bg-white p-2 md:p-4 lg:p-6">
+							<div class="h-[192px] md:h-[174px]">
+								<img class="w-full h-full object-cover" src="./assets/images/art12.jpg" alt="不哭不哭眼淚是珍珠" />
+							</div>
+							<div class="absolute inset-2 md:inset-4 lg:inset-6 before:absolute before:inset-0 before:bg-black before:opacity-70 group-hover:opacity-100 block opacity-0 transition-all duration-500">
+								<div class="absolute inset-2 lg:inset-4 text-white flex flex-col p-4 ring-1 ring-white">
+									<h3 class="hidden lg:block">唯一想擁有的人，唯一不可以擁有的</h3>
+									<span class="mt-2 leading-none hidden lg:inline-block"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+									<a href="./introduce.html" class="btn lg:px-12 lg:py-2 mt-auto flex justify-center items-center lg:self-end bg-transparent lg:bg-white lg:text-black w-full lg:w-auto h-full lg:h-auto hover:bg-transparent after:opacity-0 after:lg:opacity-100">more</a>
+								</div>
+							</div>
+						</div>
+						<h3 class="py-2 px-2 md:px-4 lg:px-0 text-sm font-bold leading-5 lg:border-b lg:border-b-black md:py-3 md:text-base md:leading-normal lg:py-4">不哭不哭眼淚是珍珠</h3>
+					</div>
+				</li>
+				<li class="mb-4 md:mb-12 w-1/2 px-3 md:w-1/3 xl:w-1/4">
+					<div class="group relative">
+						<div class="relative bg-white p-2 md:p-4 lg:p-6">
+							<div class="h-[99px] md:h-[254px]">
+								<img class="w-full h-full object-cover" src="./assets/images/art03.jpg" alt="十分鐘就到" />
+							</div>
+							<div class="absolute inset-2 md:inset-4 lg:inset-6 before:absolute before:inset-0 before:bg-black before:opacity-70 group-hover:opacity-100 block opacity-0 transition-all duration-500">
+								<div class="absolute inset-2 lg:inset-4 text-white flex flex-col p-4 ring-1 ring-white">
+									<h3 class="hidden lg:block">唯一想擁有的人，唯一不可以擁有的</h3>
+									<span class="mt-2 leading-none hidden lg:inline-block"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+									<a href="./introduce.html" class="btn lg:px-12 lg:py-2 mt-auto flex justify-center items-center lg:self-end bg-transparent lg:bg-white lg:text-black w-full lg:w-auto h-full lg:h-auto hover:bg-transparent after:opacity-0 after:lg:opacity-100">more</a>
+								</div>
+							</div>
+						</div>
+						<h3 class="py-2 px-2 md:px-4 lg:px-0 text-sm font-bold leading-5 lg:border-b lg:border-b-black md:py-3 md:text-base md:leading-normal lg:py-4">十分鐘就到</h3>
+					</div>
+				</li>
+				<li class="mb-4 md:mb-12 w-1/2 px-3 md:w-1/3 xl:w-1/4 hidden lg:block">
+					<div class="group relative">
+						<div class="relative bg-white p-2 md:p-4 lg:p-6">
+							<div class="h-[235px] md:h-[395px]">
+								<img class="w-full h-full object-cover" src="./assets/images/art04.jpg" alt="我這樣有美嗎" />
+							</div>
+							<div class="absolute inset-2 md:inset-4 lg:inset-6 before:absolute before:inset-0 before:bg-black before:opacity-70 group-hover:opacity-100 block opacity-0 transition-all duration-500">
+								<div class="absolute inset-2 lg:inset-4 text-white flex flex-col p-4 ring-1 ring-white">
+									<h3 class="hidden lg:block">唯一想擁有的人，唯一不可以擁有的</h3>
+									<span class="mt-2 leading-none hidden lg:inline-block"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+									<a href="./introduce.html" class="btn lg:px-12 lg:py-2 mt-auto flex justify-center items-center lg:self-end bg-transparent lg:bg-white lg:text-black w-full lg:w-auto h-full lg:h-auto hover:bg-transparent after:opacity-0 after:lg:opacity-100">more</a>
+								</div>
+							</div>
+						</div>
+						<h3 class="py-2 px-2 md:px-4 lg:px-0 text-sm font-bold leading-5 lg:border-b lg:border-b-black md:py-3 md:text-base md:leading-normal lg:py-4">我這樣有美嗎</h3>
+					</div>
+				</li>
+				<li class="mb-4 md:mb-12 w-1/2 px-3 md:w-1/3 xl:w-1/4 hidden lg:block">
+					<div class="group relative">
+						<div class="relative bg-white p-2 md:p-4 lg:p-6">
+							<div class="h-[235px] md:h-[395px]">
+								<img class="w-full h-full object-cover" src="./assets/images/art27.jpg" alt="我真的受傷了" />
+							</div>
+							<div class="absolute inset-2 md:inset-4 lg:inset-6 before:absolute before:inset-0 before:bg-black before:opacity-70 group-hover:opacity-100 block opacity-0 transition-all duration-500">
+								<div class="absolute inset-2 lg:inset-4 text-white flex flex-col p-4 ring-1 ring-white">
+									<h3 class="hidden lg:block">唯一想擁有的人，唯一不可以擁有的</h3>
+									<span class="mt-2 leading-none hidden lg:inline-block"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+									<a href="./introduce.html" class="btn lg:px-12 lg:py-2 mt-auto flex justify-center items-center lg:self-end bg-transparent lg:bg-white lg:text-black w-full lg:w-auto h-full lg:h-auto hover:bg-transparent after:opacity-0 after:lg:opacity-100">more</a>
+								</div>
+							</div>
+						</div>
+						<h3 class="py-2 px-2 md:px-4 lg:px-0 text-sm font-bold leading-5 lg:border-b lg:border-b-black md:py-3 md:text-base md:leading-normal lg:py-4">我真的受傷了</h3>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
