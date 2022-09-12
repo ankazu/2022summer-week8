@@ -48,42 +48,44 @@ var artistSwiper = new Swiper(".index-artist", {
     clickable: true
   }
 });
-tabsContainer.addEventListener('click', function (e) {
-  e.preventDefault();
-  var clicked = e.target.closest('.operations_tab');
-  if (!clicked) return;
-  tabs.forEach(function (t) {
-    return t.classList.remove('operations_tab-active');
-  });
-  tabsContent.forEach(function (c) {
-    return c.classList.remove('operations_content-active');
-  });
-  clicked.classList.add('operations_tab-active');
-  document.querySelector(".operations_content-".concat(clicked.dataset.tab)).classList.add('operations_content-active');
-});
 var indexMasonry = document.querySelector('#indexMasonry');
 
 if (indexMasonry) {
-  var iMasonry = new Masonry(indexMasonry, {
+  new Masonry(indexMasonry, {
     itemSelector: 'li',
     horizontalOrder: true
-  });
-  imagesLoaded("#indexMasonry").on("progress", function () {
-    iMasonry.layout();
   });
 }
 
 ;
-tabsContainer.addEventListener('click', function () {
-  var artistMasonry = document.querySelector('#artistMasonry');
 
-  if (artistMasonry) {
-    new Masonry(artistMasonry, {
-      itemSelector: 'li',
-      horizontalOrder: true
+if (tabsContainer) {
+  tabsContainer.addEventListener('click', function (e) {
+    e.preventDefault();
+    var clicked = e.target.closest('.operations_tab');
+    if (!clicked) return;
+    tabs.forEach(function (t) {
+      return t.classList.remove('operations_tab-active');
     });
-  }
+    tabsContent.forEach(function (c) {
+      return c.classList.remove('operations_content-active');
+    });
+    clicked.classList.add('operations_tab-active');
+    document.querySelector(".operations_content-".concat(clicked.dataset.tab)).classList.add('operations_content-active');
+  });
+  tabsContainer.addEventListener('click', function () {
+    var artistMasonry = document.querySelector('#artistMasonry');
 
-  ;
-});
+    if (artistMasonry) {
+      new Masonry(artistMasonry, {
+        itemSelector: 'li',
+        horizontalOrder: true
+      });
+    }
+
+    ;
+  });
+}
+
+;
 //# sourceMappingURL=all.js.map
